@@ -1,0 +1,40 @@
+Question: 1
+Kredi limiti (creditlimit) 100.000'den büyük olan 
+tüm müsterilerin (-customers tablosundan) müsteri numarasi, 
+adi ve kredi limit bilgilerini creditlimit alanina göre sirali 
+bir sekilde gösteriniz.
+
+SELECT 
+customerNumber,
+customerName,
+creditLimit
+
+FROM customers
+
+WHERE creditlimit > 100000
+
+ORDER BY creditlimit DESC;
+
+Question: 2
+ustomers tablosundan customernumber bilgisi 
+151 olan kaydin her sütununu gösteriniz.
+
+SELECT *
+
+FROM customers
+
+WHERE customernumber = 151;
+
+
+Question 3:
+Posta kodu (postalcode) 10022 olan müsterilerin 
+kredi limit bilgilerini azalan sirada gösteriniz.
+
+SELECT creditlimit
+
+FROM customers
+
+WHERE postalcode = 10022
+
+ORDER BY creditlimit
+;
